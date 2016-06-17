@@ -10,11 +10,17 @@ angular.module('starter', ['ionic'])
     // Enable to debug issues.
     // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
-    var notificationOpenedCallback = function(jsonData) {
-      alert("Notification received:\n" + JSON.stringify(jsonData));
-      console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
-    };
+//    var notificationOpenedCallback = function(jsonData) {
+//      alert("Notification received:\n" + JSON.stringify(jsonData));
+//      console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
+//    };
 
+ var notificationOpenedCallback = function(jsonData) {
+  if (jsonData.additionalData) {
+    if (jsonData.additionalData.yourUrlKey)
+      location.href = jsonData.additionalData.yourUrlKey;
+  }
+}
     // Update with your OneSignal AppId and googleProjectNumber before running.
     window.plugins.OneSignal.init("a35c1178-2390-4c70-866c-78d93cffc4be",
                                    {googleProjectNumber: "281905587763"},
