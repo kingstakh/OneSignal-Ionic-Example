@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.wpionic.app" version="1.0.0">
+   <name>WP Ionic</name>
+   <description>Ionic app</description>
+   <author href="http://scottbolinger.com" email="scott@apppresser.com">KingStakh</author>
+
+	<gap:platform name="android" />
+
+  <gap:plugin name="onesignal-cordova-plugin" source="npm" />
+  
+  <!-- Recommend the newest cli but requires cli-5.1.1+ and gradle for Android. -->
+  <!-- If the below settings are not compatible with your project set the "PGB ANT" version above. -->
+  <preference name="phonegap-version" value="cli-5.4.1" />
+  <preference name="android-build-tool" value="gradle" />
+
+
+</widget>
