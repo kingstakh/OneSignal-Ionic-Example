@@ -11,8 +11,7 @@
 	<!-- If the below settings are not compatible with your project set the "PGB ANT" version above. -->
 	<preference name="phonegap-version" value="cli-5.4.1" />
 	<preference name="android-build-tool" value="gradle" />
-
-<gap:plugin name="cordova-plugin-customurlscheme" source="npm">
-  <param name="URL_SCHEME" value="mycoolapp" />
-</gap:plugin>
+	<gap:plugin name="cordova-plugin-customurlscheme" source="npm">
+	  <param name="URL_SCHEME" value="mycoolapp" />
+	</gap:plugin>
 </widget>
