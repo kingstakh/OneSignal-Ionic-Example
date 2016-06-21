@@ -11,4 +11,9 @@
 	<!-- If the below settings are not compatible with your project set the "PGB ANT" version above. -->
 	<preference name="phonegap-version" value="cli-5.1.1" />
 	<preference name="android-build-tool" value="gradle" />
+	<universal-links>
+    <host name="1871.by">
+        <path url="/some/path" />
+    </host>
+</universal-links>
 </widget>
